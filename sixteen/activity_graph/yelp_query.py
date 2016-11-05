@@ -17,9 +17,9 @@ def yelp_query(lat_long, activity):
 	search_results = client.search_by_coordinates(lat_long[0], lat_long[1], **params)
 	return search_results
 	## for testing purposes
-	# print search_results.total
-	# print search_results.businesses[0].categories
-	# print search_results.businesses[0].location.city
-	# print search_results.businesses[0].name
-	# print search_results.businesses[0].rating
-	# print search_results.businesses[0].snippet_text
+	print search_results.total
+	print search_results.businesses[0].categories
+	print search_results.businesses[0].location.city
+	print search_results.businesses[0].name
+	print search_results.businesses[0].rating
+	print search_results.businesses[0].snippet_text
