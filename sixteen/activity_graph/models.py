@@ -25,6 +25,7 @@ class ratings (models.Model):
 
 class extendedUser(models.Model):
     user        = models.OneToOneField(User, on_delete = models.CASCADE)
+    rate_counts = models.IntegerField()
 
 class business (models.Model):
     yelp_rate   = models.FloatField()
