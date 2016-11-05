@@ -29,6 +29,6 @@ def dankAlgo (user1, business1):
 
     partials    =   usageBoost (partialType * 0.25 + partialEnv / 3)
 
-    rank        = distfactor(partials + yelpfactor)
+    rank        = distfactor(partials + yelpfactor + business1.app_rate * 0.4)
 
     return rank

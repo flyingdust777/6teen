@@ -33,6 +33,7 @@ class extendedUser(ratings):
 class business (ratings):
     name        = models.CharField(max_length = 250, default = 'Business Name')
     yelp_rate   = models.FloatField(default = 2)
+    app_rate    = models.FloatField(default = 2)
     address     = models.CharField(max_length = 250)
     def __str__(self):
         return '%s \n c%s' % (self.name, self.address)
