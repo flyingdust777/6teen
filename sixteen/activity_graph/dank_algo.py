@@ -1,15 +1,15 @@
 import distanceCalc from gis
 import numpy as np
 
-def dankAlgo (user1, busines1):
+def dankAlgo (user1, business1):
     # Calculate the rating for busines
     # Distance, Gaussian decay from Zero
     userloc     = (user1.latitude, user1.longitude)
-    distance    = distanceCalc(userloc, busines1)
+    distance    = distanceCalc(userloc, business1)
     distfactor  = 5 * np.exp(-d**2 / 1000)
 
     # Yelp Contribution: between 0 and 1
-    yelpfactor  = 0.2 * busines1.yelp_rate
+    yelpfactor  = 0.2 * business1.yelp_rate
 
     # Boosts strength of application rating on amount of use
     # Boosts by 0.01 for every rating from 1 up to 2
