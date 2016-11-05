@@ -9,13 +9,19 @@ class affinity (models.Model):
     longitude   = models.FloatField()
 
     # Cost
-    cost        = 
+    cost        = models.FloatField()
 
     # Sports
-    water       = models.FloatField()
+    aquatic     = models.FloatField()
     novel       = models.FloatField()
     leisure     = models.FloatField()
     coolShit    = models.FloatField()
 
     # Environments
-    forest =
+    forest      = models.FloatField()
+    mount       = models.FloatField()
+    water       = models.FloatField()
+
+class business (models.Model):
+    cost        = models.FloatField()
+    
