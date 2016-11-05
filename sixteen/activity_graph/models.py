@@ -27,6 +27,12 @@ class extendedUser(models.Model):
     user        = models.OneToOneField(User, on_delete = models.CASCADE)
     rate_counts = models.IntegerField()
 
+    def __str__(self):
+        return "%s's profile" % self.user
+
 class business (models.Model):
+    name        = models.CharField(max_length = 250)
     yelp_rate   = models.FloatField()
     address     = models.CharField(max_length = 250)
+    def __str__(self):
+        return '%s \n c%s' % (self.name, self.address)
