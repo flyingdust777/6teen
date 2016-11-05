@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models. import User
+from django.contrib.auth.models import User
 
 class ratings (models.Model):
     # Location
@@ -28,4 +28,4 @@ class extendedUser(models.Model):
 
 class business (models.Model):
     yelp_rate   = models.FloatField()
-    address     = models.CharField()
+    address     = models.CharField(max_length = 250)
