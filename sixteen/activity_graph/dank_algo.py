@@ -6,29 +6,28 @@ def dankAlgo (user1, busines1):
     # Sports Category, Environment Category
     #Yelp Rating, Cost
 
-    # Distance
+    # Distance, Gaussian decay from Zero
     userloc     = (user1.latitude, user1.longitude)
     distance    = distanceCalc(userloc, busines1)
-    distfactor  = 2 * np.exp (-(d) / b)2
+    distfactor  = 5 * np.exp(-d**2 / 1000)
+
+
+    yelpfactor  = 0.2 * busines1.yelp_rate
+
+    usagefactor = 1 + 0.01 * user1.rate_counts
+    if (rate_counts > 100):
+        usageBoost = 2
 
     # Affinity Ranking
-    if (business1.cost > user1.cost):
-        costfactor = 0.25(business1.cost - user1.cost)
-    elif: 
+    partialType =   business1.aqua * user1.aqua + \
+                    business1.novel * user1.novel + \
+                    business1.leisure * user1.leisure + \
+                    business1.coolShit * user1.coolShit
 
+    partialEnv  =   business1.forest * user1.forest + \
+                    business1.mount * user1.mount + \
+                    business1.water * user1.water
 
-    usagefactor = 0.01 * user1.rate_counts
+    rank        = distfactor(usagefactor * partials + yelpfactor)
 
-    afffactor   = usagefactor * partials
-
-
-    # Sports
-    aqua        = models.FloatField()
-    novel       = models.FloatField()
-    leisure     = models.FloatField()
-    coolShit    = models.FloatField()
-
-    # Environments
-    forest      = models.FloatField()
-    mount       = models.FloatField()
-    water       = models.FloatField()
+    return rank
