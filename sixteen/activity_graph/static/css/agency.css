@@ -302,17 +302,17 @@ section h3.section-subheading {
   margin: 15px 0;
   text-transform: none;
 }
-#preferences .preferences-item {
+#portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
 }
-#preferences .preferences-item .preferences-link {
+#portfolio .portfolio-item .portfolio-link {
   display: block;
   position: relative;
   max-width: 400px;
   margin: 0 auto;
 }
-#preferences .preferences-item .preferences-link .preferences-hover {
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
   background: rgba(254, 209, 54, 0.9);
   position: absolute;
   width: 100%;
@@ -322,10 +322,10 @@ section h3.section-subheading {
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
 }
-#preferences .preferences-item .preferences-link .preferences-hover:hover {
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
   opacity: 1;
 }
-#preferences .preferences-item .preferences-link .preferences-hover .preferences-hover-content {
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   position: absolute;
   width: 100%;
   height: 20px;
@@ -335,35 +335,35 @@ section h3.section-subheading {
   margin-top: -12px;
   color: white;
 }
-#preferences .preferences-item .preferences-link .preferences-hover .preferences-hover-content i {
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
   margin-top: -12px;
 }
-#preferences .preferences-item .preferences-link .preferences-hover .preferences-hover-content h3,
-#preferences .preferences-item .preferences-link .preferences-hover .preferences-hover-content h4 {
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
   margin: 0;
 }
-#preferences .preferences-item .preferences-caption {
+#portfolio .portfolio-item .portfolio-caption {
   max-width: 400px;
   margin: 0 auto;
   background-color: white;
   text-align: center;
   padding: 25px;
 }
-#preferences .preferences-item .preferences-caption h4 {
+#portfolio .portfolio-item .portfolio-caption h4 {
   text-transform: none;
   margin: 0;
 }
-#preferences .preferences-item .preferences-caption p {
+#portfolio .portfolio-item .portfolio-caption p {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
   font-size: 16px;
   margin: 0;
 }
-#preferences * {
+#portfolio * {
   z-index: 2;
 }
 @media (min-width: 767px) {
-  #preferences .preferences-item {
+  #portfolio .portfolio-item {
     margin: 0 0 30px;
   }
 }
@@ -653,12 +653,12 @@ ul.social-buttons li a:active {
 .btn:active:focus {
   outline: none;
 }
-.preferences-modal .modal-dialog {
+.portfolio-modal .modal-dialog {
   margin: 0;
   height: 100%;
   width: auto;
 }
-.preferences-modal .modal-content {
+.portfolio-modal .modal-content {
   border-radius: 0;
   background-clip: border-box;
   -webkit-box-shadow: none;
@@ -668,27 +668,27 @@ ul.social-buttons li a:active {
   padding: 100px 0;
   text-align: center;
 }
-.preferences-modal .modal-content h2 {
+.portfolio-modal .modal-content h2 {
   margin-bottom: 15px;
   font-size: 3em;
 }
-.preferences-modal .modal-content p {
+.portfolio-modal .modal-content p {
   margin-bottom: 30px;
 }
-.preferences-modal .modal-content p.item-intro {
+.portfolio-modal .modal-content p.item-intro {
   margin: 20px 0 30px;
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
   font-size: 16px;
 }
-.preferences-modal .modal-content ul.list-inline {
+.portfolio-modal .modal-content ul.list-inline {
   margin-bottom: 30px;
   margin-top: 0;
 }
-.preferences-modal .modal-content img {
+.portfolio-modal .modal-content img {
   margin-bottom: 30px;
 }
-.preferences-modal .close-modal {
+.portfolio-modal .close-modal {
   position: absolute;
   width: 75px;
   height: 75px;
@@ -697,10 +697,10 @@ ul.social-buttons li a:active {
   right: 25px;
   cursor: pointer;
 }
-.preferences-modal .close-modal:hover {
+.portfolio-modal .close-modal:hover {
   opacity: 0.3;
 }
-.preferences-modal .close-modal .lr {
+.portfolio-modal .close-modal .lr {
   height: 75px;
   width: 1px;
   margin-left: 35px;
@@ -712,7 +712,7 @@ ul.social-buttons li a:active {
   /* Safari and Chrome */
   z-index: 1051;
 }
-.preferences-modal .close-modal .lr .rl {
+.portfolio-modal .close-modal .lr .rl {
   height: 75px;
   width: 1px;
   background-color: #222222;
@@ -723,7 +723,7 @@ ul.social-buttons li a:active {
   /* Safari and Chrome */
   z-index: 1052;
 }
-.preferences-modal .modal-backdrop {
+.portfolio-modal .modal-backdrop {
   opacity: 0;
   display: none;
 }
