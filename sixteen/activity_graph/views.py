@@ -14,6 +14,3 @@ def account(request):
 #@login_required(login_url="login/")
 def feed (request):
     return render(request, 'activity_graph/feed.html')
-
-def business (request):
-    return render(request, 'activity_graph/eventpage.html')
