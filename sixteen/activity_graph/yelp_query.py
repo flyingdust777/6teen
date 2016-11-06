@@ -12,8 +12,8 @@ with io.open('config_secret.json') as cred:
 # now can use client object to make requests to Yelp
 # function takes two arguments, a tuple and string
 # returns an object containing list of businesses + other info
-def yelp_query(lat_long, activity):
-	params = {'term': activity, 'lan': 'en'}
+def yelp_query(lat_long):
+	params = {'term': 'active', 'lan': 'en'}
 	search_results = client.search_by_coordinates(lat_long[0], lat_long[1], **params)
 	return search_results
 	## for testing purposes
